@@ -1,0 +1,169 @@
+Linux Commands – Lab Record
+1) Directory Commands
+
+a) mkdir ev4
+Creates a directory named ev4.
+
+b) cd ev4
+Moves into the ev4 directory.
+
+c) mkdir 66
+Creates a directory named 66 inside ev4.
+
+d) ls -l 66
+Displays detailed listing of directory 66.
+
+e) Basic Navigation Commands
+
+i) cd -
+Switches to the previous working directory.
+
+ii) cd -
+Switches back to the last directory again.
+
+iii) cd .
+Stays in the current directory.
+
+iv) cd ..
+Moves to the parent directory.
+
+v) cd ~
+Moves to the home directory.
+
+vi) cd /
+Moves to the root directory.
+
+vii) ls -l
+Displays files in long listing format.
+
+viii) cd media
+Moves into media directory (relative path).
+
+ix) cd
+Moves to the home directory.
+
+x) pwd
+Displays the present working directory path.
+
+xi) cd media
+Enters media directory inside current directory.
+
+xii) cd /media
+Moves to media directory using absolute path.
+
+xiii) ls -l
+Shows detailed file list.
+
+xiv) ls -al
+Shows all files including hidden files in long format.
+
+xv) cd ~/ev4/66/abhinav
+Moves to folder abhinav inside 66.
+
+xvi) mkdir emptydummy
+Creates directory emptydummy.
+
+xvii) mkdir dummy
+Creates directory dummy.
+
+xviii) cd dummy
+Enters dummy directory.
+
+xix) touch file1
+Creates empty file file1.
+
+xx) touch file2
+Creates empty file file2.
+
+xxi) ls -l
+Lists files in long format.
+
+xxii) rm -i file2
+Deletes file2 with confirmation.
+
+xxiii) ls -l
+Shows remaining files.
+
+xxiv) cd ..
+Moves to parent directory.
+
+xxv) rm emptydummy
+Fails because rm cannot delete a directory directly.
+
+xxvi) rmdir emptydummy
+Deletes empty directory emptydummy.
+
+xxvii) rmdir dummy
+Fails because dummy is not empty.
+
+xxviii) rm -r dummy
+Deletes dummy directory with its contents.
+
+2) File Creation
+
+cat > file1.txt
+Creates file file1.txt.
+Type: My first line
+
+3) Create Another File
+
+cat > file2.txt
+Creates file file2.txt.
+Type: Hello Second line
+
+4) Create file3.txt
+
+Create file file3.txt and type:
+Hello line
+
+5) Combine Files
+
+cat file1.txt file2.txt > file_combined.txt
+Combines contents of file1.txt and file2.txt into file_combined.txt.
+
+6) Append File
+
+cat file3.txt >> file_combined.txt
+Appends contents of file3.txt to file_combined.txt.
+
+7) View File
+
+cat file_combined.txt
+Displays contents of file_combined.txt.
+
+8) Search Word
+
+grep -i hello file*
+Searches for word “hello” (case-insensitive) in all files starting with file.
+
+9) Copy File
+
+cp file1.txt ~/ev4/66
+Copies file1.txt to 66 directory.
+
+10) Rename File
+
+mv file_combined.txt combined
+Renames file_combined.txt to combined.
+
+11) Change Permissions
+
+chmod u+x combined
+Gives execute permission to owner.
+
+chmod g-r combined
+Removes read permission from group.
+
+chmod 777 combined
+Gives full permissions to all users.
+
+12) User Management
+
+sudo useradd abhinav
+Creates a new user named abhinav.
+
+sudo passwd abhinav
+Sets password for user abhinav.
+
+sudo userdel abhinav
+Deletes user abhinav.
