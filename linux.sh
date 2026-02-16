@@ -1,0 +1,7 @@
+NAME="Abhinav_c"
+ROLL_Number="66"
+CLASS="EV4"
+echo "Name: $NAME"
+echo "Roll Number: $ROLL_Number"
+echo "Class: $CLASS"
+echo "Current Date and Time: $(date)"
